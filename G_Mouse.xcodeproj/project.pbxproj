@@ -13,6 +13,8 @@
 		F915035B1ED2C1D700B4112C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F91503591ED2C1D700B4112C /* Main.storyboard */; };
 		F915035D1ED2C1D700B4112C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F915035C1ED2C1D700B4112C /* Assets.xcassets */; };
 		F91503601ED2C1D700B4112C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F915035E1ED2C1D700B4112C /* LaunchScreen.storyboard */; };
+		F91503691ED2C1F100B4112C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F91503681ED2C1F100B4112C /* CoreBluetooth.framework */; };
+		F915036B1ED2C1F600B4112C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F915036A1ED2C1F600B4112C /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		F915035C1ED2C1D700B4112C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F915035F1ED2C1D700B4112C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F91503611ED2C1D700B4112C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F91503681ED2C1F100B4112C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		F915036A1ED2C1F600B4112C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F915036B1ED2C1F600B4112C /* CoreMotion.framework in Frameworks */,
+				F91503691ED2C1F100B4112C /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,7 @@
 			children = (
 				F915034F1ED2C1D700B4112C /* G_Mouse */,
 				F915034E1ED2C1D700B4112C /* Products */,
+				F91503671ED2C1F100B4112C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +84,15 @@
 				F91503511ED2C1D700B4112C /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F91503671ED2C1F100B4112C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F915036A1ED2C1F600B4112C /* CoreMotion.framework */,
+				F91503681ED2C1F100B4112C /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +328,7 @@
 				F91503661ED2C1D700B4112C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -27,6 +27,7 @@
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
+		<string>gyroscope</string>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
